@@ -12,4 +12,5 @@ target_env=$2
 drush_alias=$site'.'$target_env
 
 # Execute a standard drush command.
+echo "Running post-code-update hook..."
 drush @$drush_alias cc all
